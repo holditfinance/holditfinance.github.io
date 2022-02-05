@@ -47,19 +47,20 @@
 		model-viewer#reveal {
 		--poster-color: transparent;
 		}
-		/*
+		
 		#nft-container{
 		position:absolute;
 		top:0;
 		left:0;
 		opacity:1;
 		max-width:400px;
+		width:100%;
 		}
 		
 		#nft-container > .nft-video{
-		object-fit: cover;	
+		object-fit: cover;
 		}
-		
+		/*
 		#3d-model-container{
 		position:absolute;
 		top:0;
@@ -83,15 +84,19 @@
 	<section class="first-section d-flex justify-content-center align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
-				<div id="#nft-container" class="ratio ratio-1x1">
+			<div class="col-12" style="position:relative;">
+				<div id="#nft-container" class="mx-auto">
+					<div class="ratio ratio-1x1">
 					<video class="nft-video" autoplay muted loop>
 						<source src="https://holdit.finance/assets/dog60fps.webm" type="video/webm">
 					</video>
+					</div>
 				</div>
-				<div id="#3d-model-container" class="ratio ratio-1x1">
+				<div id="#3d-model-container" class="mx-auto">
+					<div class="ratio ratio-1x1">
 					<model-viewer class="3d-model" auto-rotate="" src="https://holdit.finance/assets/dog.glb" camera-controls="" environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
 					</model-viewer>
+					</div>
 				</div>
 			</div>
 		</div>              
