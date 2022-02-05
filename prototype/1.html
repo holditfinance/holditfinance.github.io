@@ -90,16 +90,8 @@
     		background: #7093dd;
 		}
 	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#view-button").click(function(){
-				$("#nft-container").animate({opacity:'0'},500);
-				$("#model-container").animate({opacity:'1'},500);
-    
-			});
-		});
-	</script>
+	
+	
 </head>
 <body>
 	<main>
@@ -129,6 +121,16 @@
 	</section>
 	
 	</main>
+	<script>
+		$(document).ready(function(){
+			$("#view-button").click(function(){
+				$("#nft-container").animate({opacity:'0'},500);
+				$("#model-container").animate({opacity:'1'},500);
+    
+			});
+		});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
