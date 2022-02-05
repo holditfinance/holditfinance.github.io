@@ -55,6 +55,9 @@
 		box-shadow:0 0 15px -2px rgb(0 0 0 / 25%);
     		border-radius:12px;
 		overflow:hidden;
+		position:absolute;
+		top:0;
+		left:0;
 		}
 		
 		#nft-container .nft-video{
@@ -65,6 +68,9 @@
 		opacity:1;
 		max-width:400px;
 		width:100%;
+		position:absolute;
+		top:0;
+		left:0;
 		}
 		/*
 		#3d-model-container{
@@ -98,19 +104,21 @@
 	<section class="first-section d-flex justify-content-center align-items-center">
 	<div class="container">
 		<div class="row">
-			<div class="col-12" style="position:relative;">
-				<div id="nft-container" class="mx-auto">
+			<div class="col-12">
+				<div class="ratio ratio-1x1 mx-auto">
+				<div id="nft-container">
 					<div class="ratio ratio-1x1">
 					<video class="nft-video" autoplay muted loop>
 						<source src="https://holdit.finance/assets/dog60fps1x1.webm" type="video/webm">
 					</video>
 					</div>
 				</div>
-				<div id="model-container" class="mx-auto">
+				<div id="model-container">
 					<div class="ratio ratio-1x1">
 					<model-viewer class="3d-model" data-js-focus-visible auto-rotate src="https://holdit.finance/assets/dog.glb" camera-controls environment-image="neutral" interaction-prompt="none" ar-status="not-presenting">
 					</model-viewer>
 					</div>
+				</div>
 				</div>
 			</div>
 			<div class="col-12">
@@ -121,6 +129,9 @@
 	</section>
 	
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#view-button").click(function(){
@@ -130,8 +141,5 @@
 			});
 		});
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 </html>
